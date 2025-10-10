@@ -10,7 +10,7 @@ print(f"Area of rectangle is {area}cm²")
 # You can also write above statement like this 
 # print(f"Area of rectangle is {l*b}")
 
-# Another problem
+# Another problems
 # Shopping Cart problem
 item = input ("Name the item you want to buy : ")
 price = float(input("At what price do you want to buy : "))
