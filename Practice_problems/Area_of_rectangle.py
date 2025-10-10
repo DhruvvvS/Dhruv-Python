@@ -1,0 +1,10 @@
+# Problem for practice input function
+#  AREA OF RECTANGLE (length * breadth)
+
+l = float(input("Length: "))
+b = float(input("Breadth: "))
+
+area = l*b
+print(f"Area of rectangle is {area}cm²")
+# You can also write above statement like this 
+# print(f"Area of rectangle is {l*b}")
