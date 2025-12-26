@@ -93,7 +93,7 @@ for i in range((rows // 2) + 1, 0 , -1):
     print()
 
 
-# creating a DIAMOND PATTERN in Numbers
+# creating a DIAMOND PATTERN in Alphabets
 """   A
      BCD
     EFGHI
