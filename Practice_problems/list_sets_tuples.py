@@ -23,35 +23,39 @@ print(num.count("8")) # counts how many times the particular element came in the
 
 # SET :--
 
-# here char is the actual set and char_set is just a temporary variable to append the user input to the actual set
+# here h is the actual set and char_set is just a temporary variable to append the user input to the actual set
 
-char = {}
+char = []
 for i in range(0,5):
-    char_input = input("Enter the num to input: ")
+    char_input = input("Enter the alphabet to input: ")
     char_set = char.append(char_input)
-# append functions to add the element from last
+h = set(char)
+#  In sets using add or append function shows error so we need to form a list then convert it to set by typecasting
 
-print(char)
-print(len(char))
-print("b" in char) # find the element in the set
-char.add("S") # adds the element at random index
-print(char)
-char.remove("a") # removes the element
-print(char)
-char.clear() # clears whole set
+
+print(h)
+print(len(h))
+print("b" in h) # find the element in the set
+h.add("S") # adds the element at random index
+print(h)
+h.remove("a") # removes the element
+print(h)
+h.clear() # clears whole set
 
 # TUPLES :--
 
-# here x is the actual tuple and x_tuple is just a temporary variable to append the user input to the actual set
+# here y is the actual tuple and x_tuple is just a temporary variable to append the user input to the actual tuple
 
-x = ()
+x = []
 for i in range(0,5):
-    x_input = input("Enter the num to input: ")
+    x_input = input("Enter the character to input: ")
     x_tuple = x.append(x_input)
-# append functions to add the element from last
 
-print(x)
-print(len(x))
-print("b" in x)
-print(x.index("k")) # finds the index no. at which that element is
-print(x.count("a")) # counts no. of times element came in that tuple
+y = tuple(x)
+# In tuples we can't use add or append function so we need to form a list then convert it to tuple by typecasting
+
+print(y)
+print(len(y))
+print("b" in y)
+print(y.index("k")) # finds the index no. at which that element is
+print(y.count("a")) # counts no. of times element came in that tuple
