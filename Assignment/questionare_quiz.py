@@ -73,6 +73,9 @@ for guess in guesses:
     print(guess, end=" ")
 print()
 
+# printing how many questions user got correct
+print(f"You got {score} questions right.")
+
 # converting the score got into percentage and printing it
 score = int((score / len(questions)) * 100)
 print(f"Your score is {score}%")
