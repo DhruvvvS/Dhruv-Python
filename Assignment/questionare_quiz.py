@@ -3,6 +3,8 @@
 # making tuple collection for questions and answers
 # As it doesn't require any changes afterwards, tuples will be ordered and faster than Lists
 
+import time 
+
 questions = (
     "Which country has the most time zones in the world?",
     "What was the name of the first ever animal sent to space?",
@@ -55,6 +57,9 @@ for question in questions:
         print(f"The correct answer for this is {answers[question_num].upper()}")
 
     question_num += 1
+
+# time.sleep just for the sake of showing that we are calculating
+time.sleep(2)
 
 # just for aesthetics
 print("-------------------")
