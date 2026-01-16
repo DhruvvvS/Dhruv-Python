@@ -37,29 +37,29 @@ while True:
 
     # condition when guess = guessed_no
     else:
-        print("---------------------")
-        print("      HURRAY!!!      ")
-        print("YOU GUESSED IT RIGHT!")
-        print("---------------------")
+        print("-----------------------------------------")
+        print("                HURRAY!!!                ")
+        print("          YOU GUESSED IT RIGHT!          ")
+        print("-----------------------------------------")
         break
 
 # applying time sleep function to make it more fun
 time.sleep(1)
 
 # if condition because what if the user guesses the number in his first try
-if guesses == 1: 
+if guesses == 0: 
     # Printing Results
-    print("       RESULTS       ")
-    print("      HURRAY!!!      ")
-    print("You guessed it in First chance.")
+    print("                RESULTS              ")
+    print("               HURRAY!!!             ")
+    print("     You guessed it in First chance.  ")
 
 # else print this result
 else:
     # Printing Results
-    print("       RESULTS       ")
+    print("                RESULTS                 ")
 
     # adding one(1) in final number of guesses to include the guess for final answer also
-    print(f"You required {guesses+1} number of guesses.")
+    print(f"    You required {guesses+1} number of guesses.")
 
-    print("      TRY AGAIN      ")
+    print("               TRY AGAIN                 ")
     print("This time try to guess in less guesses :)")
