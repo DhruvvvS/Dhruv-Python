@@ -23,6 +23,11 @@ while True:
     if user == "Q":
         break
     
+    # condition if input made by user is not in the tuple "a"
+    while user not in a:
+        print("You have to make choice between (Rock, Paper, Scissors).")
+        user = input("Rock, Paper, Scissors (q to quit the game): ").capitalize()
+
     # for fun and making it more like the actual game
     print("ROCK")
     time.sleep(0.3)
@@ -37,7 +42,7 @@ while True:
     b = random.choice(a)
 
     # printing what computer played
-    print(f"Computer played {b}.")
+    print(f"Computer Played {b}.")
 
     # condition if user and computer played same.
     if b == user:
