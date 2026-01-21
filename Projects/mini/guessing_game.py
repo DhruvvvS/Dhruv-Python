@@ -16,7 +16,7 @@ guesses = 0
 guessed_no = random.randint(a,b)
 
 # Taking user input
-guess = int(input("Enter your guess: "))
+guess = int(input(f"Select a number between {a} and {b}: "))
 
 # Initialising while loop
 while True:
@@ -49,8 +49,8 @@ time.sleep(1)
 # if condition because what if the user guesses the number in his first try
 if guesses == 0: 
     # Printing Results
-    print("                RESULTS              ")
-    print("               HURRAY!!!             ")
+    print("                RESULTS               ")
+    print("               HURRAY!!!              ")
     print("     You guessed it in First chance.  ")
 
 # else print this result
